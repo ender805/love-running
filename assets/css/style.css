@@ -1,6 +1,5 @@
 /* google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100..900&family=Oswald:wght@200..700&display=swap');
 
 
 /* asterix wildcard selector to override default styles added by the browser */
@@ -29,7 +28,12 @@ body {
 /* header */
 header {
     background-color: lightcoral;
+    
 }
+h1 {
+    font-family:'Oswald', sans-serif;
+}
+
 /* main content */
 main {
     background-color: aqua;
