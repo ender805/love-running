@@ -178,6 +178,28 @@ main {
     padding:5%;
     color:#3a3a3a
 }
+/* meetup times section */
+#times {
+    background: url("../images/dublin-city.webp") no-repeat center/cover;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, 0.6 );
+    padding: 15px;
+    text-align: center;
+    /* this will not wrap on the screen of less than 400px wide. 
+    Each div will expand to fill the availbe space on its row */
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* create a grid of meetup dives over the background image- definitely looks better */
+    border: 2px solid white;
+}
+#times h3 {
+    color: #fafafa;
+}
 
 /* media query: tablets and larger (768 and up */
 @media screen and (min-width: 768px) {
