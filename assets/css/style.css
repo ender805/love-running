@@ -120,6 +120,7 @@ main {
 
 }
 #reasons {
+    
     width: 90%;
     margin:20px auto;
     
@@ -142,6 +143,15 @@ main {
 #benefits hr {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
+}
+#befefits-image>div,
+#circle-cover-bg {
+    height: 90vw;
+    width: 90vw;
+    background: url(../images/reasons-image.webp) no-repeat center center/cover;
+    border-radius: 50%;
+    
+
 }
 
 
