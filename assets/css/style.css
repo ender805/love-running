@@ -97,7 +97,8 @@ main {
     /* make main element to take up any surplus space to push fotter down */
     flex: 1 0 auto;
     margin-top: 47px;
-
+    display: flex;
+    flex-direction: column;
 }
 /* hero section  */
 #hero {
@@ -150,7 +151,7 @@ main {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
 }
-#befefits-image>div,
+
 #circle-cover-bg {
     height: 90vw;
     width: 90vw;
@@ -168,88 +169,8 @@ main {
     align-items: center;
     justify-content: center;
 }
-/* gallery page  */
-#photos img {
-    width: 100%;
-    line-height: 1em;
-}
-#photos {
-    line-height: 0;
-}
 
-/*  signup section  */
-#signup {
-    background: url(../images/signup-image.webp) no-repeat center center/cover;
-    background-size: cover;
-    background-position: 75%;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    padding-top: 20px;
-    padding-left: 10%;
-    padding-right: 10%;
-
-}
-#signup h2 {
-    color: #fafafa;
-    padding-top: 30px;
-    padding-bottom: 20px;
-
-}
-#signup-form {
-    padding: 30px;
-    color: #ffffff;
-    background-color: rgba(60,60,60, 0.6);
-}
-#signup input {
-    background: transparent;
-    border:1px solid #fafafa;
-    border-radius: 2px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    
-    
-
-}
-    
-.radio-buttons {
-    
-    display: flex;
-    justify-content: space-between;
-    
-
-}
-.join-button {
-    border-radius: 2px;
-    background-color: #454b1b;
-    color: #fafafa;
-    font-size: 100%;
-    margin-top: 20px;
-    padding:32px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-
-
-
-
-
-/* footer */
-#social-networks {
-    text-align: center;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-
-}
-#social-networks i {
-    font-size: 110%;
-    padding:5%;
-    color:#3a3a3a
-}
-/* meetup times section */
+/* meetup section  */
 #times {
     background: url("../images/dublin-city.webp") no-repeat center/cover;
     display: flex;
@@ -271,6 +192,116 @@ main {
 #times h3 {
     color: #fafafa;
 }
+/* gallery page  */
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+#photos {
+    line-height: 0;
+}
+
+/*  signup section  */
+#signup {
+    background: url(../images/signup-image.webp) no-repeat center center/cover;
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10% 0 10%;
+    flex-grow: 1;
+
+}
+#signup-form>h2 {
+    color: #fafafa;
+    padding-bottom: 20px;
+
+}
+#signup-form {
+    padding: 30px;
+    color: #ffffff;
+    background-color: rgba(60,60,60, 0.6);
+}
+.text-input {
+    background: transparent;
+    border:1px solid #fafafa;
+    border-radius: 2px;
+    margin:5px 0 20px 0;
+    width: 100%;
+    height: 25px;
+    padding: 0 5px;
+    color:#fafafa
+
+    
+    
+
+}
+    
+.radio-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.join-button {
+    border-radius: 2px;
+    background-color: #454b1b;
+    color: #fafafa;
+    font-size: 100%;
+    margin-top: 20px;
+    color: #fafafa;
+    padding: 15px 32px
+   
+    
+}
+
+
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    ...
+
+    /* Form */
+    #signup {
+        background-position: center;
+        position: relative;
+    }
+
+    #signup-form {
+        max-width: 400px;
+        position: absolute;
+        left: 10%;
+        top: 150px;
+    }
+
+    .text-input:hover {
+        border-color: #f16c6b;
+    }
+
+    .join-button:hover {
+        background-color: #fafafa;
+        color: #454b1b;
+    }
+}
+
+
+
+
+
+
+/* footer */
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+
+}
+#social-networks i {
+    font-size: 160%;
+    padding:5%;
+    color:#3a3a3a
+}
+
  /* media query: large or landscape phones  (576px and up */
 @media screen and (min-width: 576px) {
     #photos {
@@ -301,7 +332,7 @@ main {
         display: none;
     }
     #logo {
-        font-size: 200%;
+        font-size: 280%;
         line-height: 75px;
         margin: 0 0.5rem;
     }
