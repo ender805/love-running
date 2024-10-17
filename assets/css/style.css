@@ -106,6 +106,8 @@ main {
     background: url("../images/hero-image.webp") no-repeat center center/cover;
     position: relative;
 }
+
+
 /* final rgba value sets the opacity so it is semi-transparent */
 #cover-text {
     background-color: rgba(241, 109, 107, .7);
@@ -174,6 +176,65 @@ main {
 #photos {
     line-height: 0;
 }
+
+/*  signup section  */
+#signup {
+    background: url(../images/signup-image.webp) no-repeat center center/cover;
+    background-size: cover;
+    background-position: 75%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+#signup h2 {
+    color: #fafafa;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+}
+#signup-form {
+    padding: 30px;
+    color: #ffffff;
+    background-color: rgba(60,60,60, 0.6);
+}
+#signup input {
+    background: transparent;
+    border:1px solid #fafafa;
+    border-radius: 2px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    
+    
+
+}
+    
+.radio-buttons {
+    
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+.join-button {
+    border-radius: 2px;
+    background-color: #454b1b;
+    color: #fafafa;
+    font-size: 100%;
+    margin-top: 20px;
+    padding:32px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+
+
+
+
 /* footer */
 #social-networks {
     text-align: center;
