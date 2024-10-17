@@ -35,32 +35,7 @@
   </head>
 
   <body>
-    <form id="signup-form">
-      <h2>LET'S GET YOU SIGNED UP!</h2>
-      <label for="name">First Name</label>
-
-      <input id="First Name" type="username">
-      <br>
-      <label for="last-name">Last name</label>
-
-      <input id="Last Name" type="username">
-      <br>
-      <label for="email-address">Email Address
-          <input id="Email Address" type="email">
-          <br>
-          <div class="radio-buttons">
-            <label for="road">Road</label>
-              <input type="radio" name="running_prefernece" id="road">
-              <br>
-              <label for="trial">Trial</label>
-              <input type="radio" name="running_preference" id="trial">
-              <br>
-              <label for="both">Both</label>
-              <input type="radio" name="running_preference" id="both">
-              <br>
-              <input type="submit" value="Let's Run!">
-          </div>
-
+   
 
 
     <header>
@@ -80,7 +55,38 @@
       </nav>
     </header>
     <main> 
-      
+      <form id="signup-form">
+        <h2><i class="fa-solid fa-heart-pulse"></i>Let's get you <br> signed up!</h2>
+        <label for="first-name">First Name</label>
+  
+        <input id="first-name" type="text" class="text-input" required>
+        <br>
+        <label for="last-name">Last name</label>
+        </label>
+  
+        <input id="last-name" type="text" class="text-input" required>
+        <br>
+        <label for="email-address">Email Address</label>
+            <input id="Email Address" type="email" name="email_address" id="email-address" class="text-input" required>
+            <br>
+  
+  
+            <div class="radio-buttons">
+              <div>
+                <label for="road">Road</label>
+                <input type="radio" name="running_prefernece" id="road" value="road" required  checked>
+              </div>
+              <div>
+                <label for="trial">Trial</label>
+                <input type="radio" name="running_preference" id="trial" value="trial" required checked>
+              </div>
+              <div>
+                <label for="both">Both</label>
+                <input type="radio" name="running_preference" id="both" value="both" required checked>
+              </div>
+              <input type="submit" value="Let's Run!">
+            </div>
+  
 
 
 
